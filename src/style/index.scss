@@ -1,9 +1,15 @@
-@import '../libs/normalize.css';
+@import './libs/normalize.css';
 
-@import '../less/_var.scss';
-@import '../less/_fonts.scss';
-@import '../less/_settings.scss';
+@import './less/var';
+@import './less/fonts';
+@import './less/settings';
 
-@import '../less/mixins/_breakpoint.scss';
+@import './less/mixins/breakpoint';
+@import './less/mixins/divider';
 
-@import '../blocks/page-header/page-header.scss';
+@import './blocks/page-header/page-header.scss';
+@import './blocks/page-content/page-content.scss';
+@import './blocks/page/page.scss';
+@import './blocks/page-main/page-main.scss';
+@import './blocks/btn/btn.scss';
+@import './blocks/drop-menu-module/drop-menu-module.scss';

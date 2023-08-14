@@ -1,0 +1,31 @@
+.btn {
+  border: none;
+  background: none;
+
+  &__request-order,
+  &__profile,
+  &__repair,
+  &__checkstatus {
+    margin-left: 16px;
+  }
+
+  
+  @include mobile {
+    &--hidden-mobile {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    &__repair {
+      margin-left: 42px;
+      position: relative;
+
+      &::after {
+        @include divider;
+        top: 10px;
+        left: -21px;
+      }
+    }
+  }
+}

@@ -5,34 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Webcore 1.6</title>
 </head>
-<body>
-  <header class="page-header">
-    <div class="page-header__title-left-side">
-      <button class="btn btn__side-menu">
-        <img src="/src/svg/burger.svg" alt="Меню">
-      </button>
-      <a href="#" class="header__logo">
-        <img src="/src/svg/Group.svg" alt="Меню">
-      </a>
-    </div>
+<body class="page page--background">
 
-    <div class="page-header__title-right-side">
-      <button class="btn btn__call-order">
-        <img src="/src/svg/call.svg" alt="Заказать звонок">
-      </button>
-      <button class="btn btn__request-order">
-        <img src="/src/svg/chat.svg" alt="Оставить заявку">
-      </button>
-      <button class="btn btn__profile">
-        <img src="/src/svg/profile.svg" alt="Профиль">
-      </button>
-      <button class="btn btn__repair">
-        <img src="/src/svg/repair.svg" alt="Ремонт">
-      </button>
-      <button class="btn btn__checkstatus">
-        <img src="/src/svg/checkstatus.svg" alt="Проверить статус ремонта">
-      </button>
+  <div class="page-content">
+    <aside class="drop-menu-module drop-menu-module--hidden">
+      <div class="drop-menu-mudule__header">
+        <button class="btn btn__cancel">
+          <img src="/src/svg/cancel.svg" alt="Закрыть">
+        </button>
+        <a href="#" class="page-header__logo">
+          <img src="/src/svg/Group.svg" alt="Лого">
+        </a>
+        <button class="btn btn__search">
+          <img src="/src/svg/search.svg" alt="Поиск">
+        </button>
+      </div>
+
+      <nav class="nav">
+        <a class="nav__link" href="">Ремонт техники</a>
+        <a class="nav__link" href="">Услуги и сервисы</a>
+        <a class="nav__link" href="">Корпоративным клиентам</a>
+        <a class="nav__link" href="">Продавцам техники</a>
+        <a class="nav__link" href="">Партнерам</a>
+        <a class="nav__link" href="">Производителям</a>
+        <a class="nav__link" href="">Наши сервисные центры</a>
+        <a class="nav__link" href="">Контакты</a>
+      </nav>
+
+      <div class="drop-menu-mudule__btns">
+        <button class="btn btn__call-order">
+          <img src="/src/svg/call.svg" alt="Заказать звонок">
+        </button>
+        <button class="btn btn__request-order">
+          <img src="/src/svg/chat.svg" alt="Оставить заявку">
+        </button>
+        <button class="btn btn__profile">
+          <img src="/src/svg/profile.svg" alt="Профиль">
+        </button>
+      </div>
+
+      <div class="drop-menu-mudule__email">
+        mail@cps.com
+      </div>
+
+      <div class="drop-menu-mudule__contact-num">
+        8 800 890 8900
+      </div>
+
+      <div class="drop-menu-mudule__lang lang-nav">
+        <div class="lang-nav__item lang-nav--active">RU</div>
+        <div class="lang-nav__item">EN</div>
+        <div class="lang-nav__item">CH</div>
+      </div>
+    </aside>
+
+    <div >
+      <header class="page-header">
+        <div class="page-header__title-left-side">
+          <button class="btn btn__side-menu">
+            <img src="/src/svg/burger.svg" alt="Меню">
+          </button>
+          <a href="#" class="page-header__logo">
+            <img src="/src/svg/Group.svg" alt="Лого">
+          </a>
+        </div>
+    
+        <div class="page-header__title-right-side">
+          <button class="btn btn__call-order btn--hidden-mobile">
+            <img src="/src/svg/call.svg" alt="Заказать звонок">
+          </button>
+          <button class="btn btn__request-order btn--hidden-mobile">
+            <img src="/src/svg/chat.svg" alt="Оставить заявку">
+          </button>
+          <button class="btn btn__profile btn--hidden-mobile">
+            <img src="/src/svg/profile.svg" alt="Профиль">
+          </button>
+          <button class="btn btn__repair">
+            <img src="/src/svg/repair.svg" alt="Ремонт">
+          </button>
+          <button class="btn btn__checkstatus">
+            <img src="/src/svg/checkstatus.svg" alt="Проверить статус ремонта">
+          </button>
+        </div>
+      </header>
+    
+      <main class="page-main">
+  
+      </main>
     </div>
-  </header>
+  </div>
 </body>
 </html>

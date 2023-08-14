@@ -1,0 +1,21 @@
+.drop-menu-module {
+    width: 320px;
+    padding: 18px 16px 32px 16px;
+    background-color: $color-el-bg;
+    
+    &--hidden {
+        display: none;
+    }
+
+    @include mobile {
+    }
+
+    @include tablet {
+    }
+
+    @include desktop {
+        display: block;
+    }
+
+    
+}

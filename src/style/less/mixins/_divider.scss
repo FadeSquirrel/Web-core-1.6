@@ -1,0 +1,9 @@
+@mixin divider {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  background: $color-divader;
+}

@@ -1,0 +1,10 @@
+@import 'normalize.css';
+@import '_var.scss';
+@import '_fonts.scss';
+@import '_settings.scss';
+@import '_breakpoint.scss';
+
+html {
+    font-family: 'TT Lakes';
+    font-size: 60px;
+}

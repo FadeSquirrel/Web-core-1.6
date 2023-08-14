@@ -1,10 +1,9 @@
-@import 'normalize.css';
-@import '_var.scss';
-@import '_fonts.scss';
-@import '_settings.scss';
-@import '_breakpoint.scss';
+@import '../libs/normalize.css';
 
-html {
-    font-family: 'TT Lakes';
-    font-size: 60px;
-}
+@import '../less/_var.scss';
+@import '../less/_fonts.scss';
+@import '../less/_settings.scss';
+
+@import '../less/mixins/_breakpoint.scss';
+
+@import '../blocks/page-header/page-header.scss';

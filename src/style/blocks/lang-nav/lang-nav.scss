@@ -1,0 +1,14 @@
+.lang-nav{
+    &__btn {
+        color: $color-text;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+
+        &--active {
+            color: $color-text-active;
+        }
+    }
+}

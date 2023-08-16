@@ -1,0 +1,10 @@
+.el {
+    &--hover {
+        &:hover {
+            cursor: pointer;
+            color: $color-text-hover;
+            opacity: 0.5;
+            transition: opacity 0.5s ease;
+        }
+    }
+}

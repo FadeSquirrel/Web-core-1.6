@@ -1,32 +1,36 @@
 import { pageMaskContainer } from "./page";
-import "../style/less/_var.scss";
+import { CONSTS } from "./vars";
 
 export const blurMaskClass = "page__mask-container--blur";
 
-const desktopWidth = getComputedStyle(
-  document.documentElement
-).getPropertyValue("--desktop-width");
-
 function resize() {
-  if (window.innerWidth > desktopWidth) {
-    removeBlurMask();
+  if (window.innerWidth > CONSTS.DESKTOP_WIDTH) {
+    if (pageMaskContainer.classList.contains(blurMaskClass)) {
+      removeBlurMask();
+    }
+  } else {
+    if (!pageMaskContainer.classList.contains(blurMaskClass)) {
+      addBlurMask();
+    }
   }
 }
 
 function addBlurMask() {
   pageMaskContainer.classList.add(blurMaskClass);
-  window.addEventListener("resize", resize);
 }
 
 function removeBlurMask() {
   pageMaskContainer.classList.remove(blurMaskClass);
-  window.removeEventListener("resize", resize);
 }
 
 export function toggleBlurMask() {
-  if (!pageMaskContainer.classList.contains(blurMaskClass)) {
+  let pageContainsClass = pageMaskContainer.classList.contains(blurMaskClass);
+
+  if (!pageContainsClass) {
     addBlurMask();
+    window.addEventListener("resize", resize);
   } else {
     removeBlurMask();
+    window.removeEventListener("resize", resize);
   }
 }

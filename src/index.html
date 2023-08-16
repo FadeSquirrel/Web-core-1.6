@@ -30,7 +30,9 @@
         </div>
 
         <nav class="drop-menu__nav">
-          <a class="link drop-menu__nav--text el--hover" href=""
+          <a
+            class="link drop-menu__nav--text drop-menu__nav--active el--hover"
+            href=""
             >Ремонт техники</a
           >
           <a class="link drop-menu__nav--text el--hover" href=""
@@ -84,7 +86,7 @@
       </aside>
 
       <!-- block with the main content of the page -->
-      <div>
+      <div class="page-content--width">
         <header class="page-header">
           <div class="page-header__title-left-side">
             <button class="btn btn__drop-menu el--hover">
@@ -105,7 +107,9 @@
             <button class="btn btn__profile btn--hidden-mobile el--hover">
               <img src="/src/svg/profile.svg" alt="Профиль" />
             </button>
-            <button class="btn btn__repair el--hover">
+            <button
+              class="btn btn__repair-request btn__divader-tablet el--hover"
+            >
               <img src="/src/svg/repair.svg" alt="Ремонт" />
             </button>
             <button class="btn btn__checkstatus el--hover">
@@ -117,7 +121,75 @@
           </div>
         </header>
 
-        <main class="page-main"></main>
+        <main class="page-main">
+          <div class="title-container">
+            <h1 class="title title--decor">Услуги и сервисы</h1>
+            <div class="title-container__btn-container">
+              <p class="title-container--text">Оставить заявку</p>
+              <button class="btn btn__repair-request el--hover">
+                <img src="/src/svg/repair.svg" alt="Отправить заявку" />
+              </button>
+              <p class="title-container--text title-container--mg-left">
+                Статус ремонта
+              </p>
+              <button class="btn btn__checkstatus el--hover">
+                <img
+                  src="/src/svg/checkstatus.svg"
+                  alt="Проверить статус ремонта"
+                />
+              </button>
+            </div>
+          </div>
+
+          <nav class="nav">
+            <div class="nav__item nav__item--active el--hover">
+              Ремонтируемые бренды
+            </div>
+            <div class="nav__item el--hover">Дополнительные услуги</div>
+            <div class="nav__item el--hover">Цены на услуги</div>
+            <div class="nav__item el--hover">Адреса сервисных центров</div>
+            <div class="nav__item el--hover">Специальные цены</div>
+            <div class="nav__item el--hover">Отзывы</div>
+          </nav>
+
+          <section class="descr">
+            <div class="descr__text">
+              <div class="descr--mobile">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </div>
+              <div class="descr--tablet">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+                <p class="p--mg">
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера. официальной гарантией производителя.
+                </p>
+              </div>
+              <div class="descr--desktop">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+                <p class="p--mg">
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера, что подтверждает большое количество
+                  постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                  рекомендациям и, в свою очередь, советуют нас родным и
+                  близким. официальной гарантией производителя.
+                </p>
+              </div>
+              <button class="show-more"></button>
+            </div>
+            <!-- <img
+              src="../src/img/photo-logo-mobile-tablet.jpg"
+              srcset="../src/img/photo-logo-desktop.jpg 530w"
+              alt="Логотип компании в офисе"
+              class="descr__img"
+            /> -->
+          </section>
+        </main>
       </div>
     </div>
   </body>

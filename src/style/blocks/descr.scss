@@ -1,0 +1,32 @@
+.descr {
+  margin-top: 32px;
+
+  &__text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+  }
+
+  @include mobile {
+    &--tablet,
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
+  }
+}

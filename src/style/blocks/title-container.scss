@@ -1,0 +1,28 @@
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &--text {
+    display: block;
+    text-align: right;
+    margin-right: 8px;
+  }
+
+  &--mg-left {
+    margin-left: 32px;
+  }
+
+  @include mobile-tablet {
+    &__btn-container {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    &__btn-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

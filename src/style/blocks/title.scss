@@ -1,0 +1,20 @@
+.title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 142.857% */
+  letter-spacing: -0.6px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &--decor {
+    position: relative;
+
+    &::before {
+      content: url(/src/svg/highlight.svg);
+      position: absolute;
+      top: 3px;
+      left: -32px;
+    }
+  }
+}

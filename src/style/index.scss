@@ -7,12 +7,17 @@
 @import "./less/mixins/breakpoint";
 @import "./less/mixins/divider";
 
-@import "./blocks/page-header/page-header.scss";
-@import "./blocks/page-content/page-content.scss";
-@import "./blocks/page/page.scss";
-@import "./blocks/page-main/page-main.scss";
-@import "./blocks/drop-menu/drop-menu.scss";
-@import "./blocks/btn/btn.scss";
-@import "./blocks/link/link.scss";
-@import "./blocks/lang-nav/lang-nav.scss";
-@import "./blocks/el/el.scss";
+@import "./blocks/link.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/page-content.scss";
+@import "./blocks/page.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/drop-menu.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/lang-nav.scss";
+@import "./blocks/el.scss";
+@import "./blocks/title.scss";
+@import "./blocks/title-container.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/descr.scss";
+@import './blocks/p.scss';

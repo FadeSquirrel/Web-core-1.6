@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  gap: 16px 16px;
+
+  @include mobile-tablet {
+    overflow: auto;
+    margin-top: 24px;
+  }
+
+  @include desktop {
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+
+  &__item {
+    color: $color-text-title;
+    padding: 8px 9px 8px 16px;
+    white-space: nowrap;
+
+    &--active {
+      border-radius: 6px;
+      border: 2px solid $color-border-highlight;
+      background: $color-el-bg;
+    }
+  }
+}

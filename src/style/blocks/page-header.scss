@@ -41,8 +41,12 @@
     display: none;
   }
 
-  &__title-left-side,
+  &__title-left-side {
+    display: flex;
+  }
+
   &__title-right-side {
     display: flex;
+    gap: 16px 16px;
   }
 }

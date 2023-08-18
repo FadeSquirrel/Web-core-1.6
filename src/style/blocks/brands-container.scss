@@ -1,0 +1,41 @@
+.brands-container {
+  margin-top: 24px;
+
+  @include mobile {
+    height: 108px;
+  }
+
+  @include tablet-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 16px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 16px 56px 16px 16px;
+
+    width: 240px;
+    height: 72px;
+    max-width: 240px;
+    max-height: 72px;
+
+    border-radius: 6px;
+    border: 1px solid #eaeaea;
+    background-color: $color-el-bg;
+    background-image: url("/src/svg/go.svg");
+    background-repeat: no-repeat;
+    background-position: 180px center;
+
+    @include mobile {
+      margin-right: 24px;
+      max-width: 240px;
+    }
+
+    @include tablet {
+      width: 224px;
+      background: (180px - 16px) center url("/src/svg/go.svg") no-repeat;
+    }
+  }
+}

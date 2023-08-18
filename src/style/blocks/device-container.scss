@@ -1,0 +1,32 @@
+.device-container {
+  margin-top: 24px;
+
+  @include mobile {
+    height: 194px;
+  }
+
+  @include tablet-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 16px;
+  }
+
+  &__item {
+    padding: 16px;
+    width: 240px;
+    height: 160px;
+    max-width: 240px;
+    max-height: 160px;
+
+    border-radius: 6px;
+    border: 1px solid #eaeaea;
+    background-color: $color-el-bg;
+    background-image: url("/src/svg/go.svg");
+    background-repeat: no-repeat;
+    background-position: 184px 104px;
+
+    @include mobile {
+      margin-right: 24px;
+    }
+  }
+}

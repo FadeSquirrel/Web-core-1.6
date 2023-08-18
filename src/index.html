@@ -46,7 +46,9 @@
           >политикой конфиденциальности</a
         >
       </p>
-      <button type="submit" class="btn btn__feedback-submit el--hover">Отправить</button>
+      <button type="submit" class="btn btn__feedback-submit el--hover">
+        Отправить
+      </button>
     </aside>
 
     <!-- modal popup window, called by clicking on the btn__call-order button -->
@@ -75,7 +77,9 @@
           >политикой конфиденциальности</a
         >
       </p>
-      <button type="submit" class="btn btn__feedback-submit el--hover">Отправить</button>
+      <button type="submit" class="btn btn__feedback-submit el--hover">
+        Отправить
+      </button>
     </aside>
 
     <!-- content that will be centered on a large monitor width -->
@@ -189,7 +193,7 @@
         </header>
 
         <main class="page-main">
-          <div class="title-container">
+          <div class="title-container mg-left-right">
             <h1 class="title title--decor">Услуги и сервисы</h1>
             <div class="title-container__btn-container">
               <p class="title-container--text">Оставить заявку</p>
@@ -208,7 +212,7 @@
             </div>
           </div>
 
-          <nav class="nav nav--left-gradient">
+          <nav class="nav nav--left-gradient mg-left-right">
             <div class="nav__item nav__item--active el--hover">
               Ремонтируемые бренды
             </div>
@@ -219,35 +223,44 @@
             <div class="nav__item el--hover">Отзывы</div>
           </nav>
 
-          <section class="descr">
+          <section class="descr mg-left-right">
             <div class="descr__text">
-              <div class="descr--mobile">
+              <div>
                 Мы являемся авторизованным сервисным центром по ремонту техники
                 Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
                 официальной гарантией производителя.
-              </div>
-              <div class="descr--tablet">
-                Мы являемся авторизованным сервисным центром по ремонту техники
-                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-                официальной гарантией производителя.
-                <p class="p--mg">
+                <p data-text-hidden="true" class="p--mg hidden-mobile">
                   Мы успешно работаем с 1992 года и заслужили репутацию
-                  надежного партнера.
+                  надежного партнера, что подтверждает большое количество
+                  постоянных клиентов.
+                  <span data-text-hidden="true" class="hidden-mobile-tablet">
+                    Мы гордимся тем, что к нам обращаются по рекомендациям и, в
+                    свою очередь, советуют нас родным и близким. официальной
+                    гарантией производителя.
+                  </span>
                 </p>
               </div>
-              <div class="descr--desktop">
-                Мы являемся авторизованным сервисным центром по ремонту техники
-                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-                официальной гарантией производителя.
+
+              <div data-text-hidden="true" class="hidden">
+                <p class="p--mg">
+                  Мы являемся авторизованным сервисным центром по ремонту
+                  техники Dell. Только у нас вы можете отремонтировать свой
+                  ноутбук Dell с официальной гарантией производителя.
+                </p>
                 <p class="p--mg">
                   Мы успешно работаем с 1992 года и заслужили репутацию
                   надежного партнера, что подтверждает большое количество
-                  постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                  постоянных клиентов.Мы гордимся тем, что к нам обращаются по
                   рекомендациям и, в свою очередь, советуют нас родным и
                   близким. официальной гарантией производителя.
                 </p>
               </div>
-              <button class="btn btn__show-more el--hover">Читать далее</button>
+
+              <button
+                class="btn btn__show-more btn__show-more--decor el--hover"
+              >
+                Читать далее
+              </button>
             </div>
             <img
               src="../src/img/photo-logo-mobile-tablet.jpg"
@@ -255,6 +268,155 @@
               alt="Логотип компании в офисе"
               class="descr__img"
             />
+          </section>
+
+          <section class="section section__brands">
+            <div class="section__title">Ремонт техники различных брендов</div>
+
+            <div class="swiper mg-left-right">
+              <div class="swiper-wrapper brands-container">
+                <a href="" class="link brands-container__item swiper-slide">
+                  <img src="./img/lenovo.png" alt="lenovo" />
+                </a>
+
+                <a href="" class="link brands-container__item swiper-slide">
+                  <img src="./img/samsung.png" alt="samsung" />
+                </a>
+
+                <a href="" class="link brands-container__item swiper-slide">
+                  <img src="./img/apple.png" alt="apple" />
+                </a>
+
+                <a href="" class="link brands-container__item swiper-slide">
+                  <img src="./img/viewsonic.png" alt="viewsonic" />
+                </a>
+
+                <a href="" class="link brands-container__item swiper-slide">
+                  <img src="./img/bosch.png" alt="bosch" />
+                </a>
+
+                <a href="" class="link brands-container__item swiper-slide">
+                  <img src="./img/hp.png" alt="hp" />
+                </a>
+
+                <a
+                  data-brands-hidden="true"
+                  href=""
+                  class="link brands-container__item hidden-tablet swiper-slide"
+                >
+                  <img src="./img/acer.png" alt="acer" />
+                </a>
+
+                <a
+                  data-brands-hidden="true"
+                  href=""
+                  class="link brands-container__item hidden-tablet swiper-slide"
+                >
+                  <img src="./img/sony.svg" alt="sony" />
+                </a>
+                <a
+                  data-brands-hidden="true"
+                  href=""
+                  class="link brands-container__item hidden-tablet-desktop swiper-slide"
+                >
+                  <img src="./img/acer.png" alt="acer" />
+                </a>
+
+                <a
+                  data-brands-hidden="true"
+                  href=""
+                  class="link brands-container__item hidden-tablet-desktop swiper-slide"
+                >
+                  <img src="./img/sony.svg" alt="sony" />
+                </a>
+                <a
+                  data-brands-hidden="true"
+                  href=""
+                  class="link brands-container__item hidden-tablet-desktop swiper-slide"
+                >
+                  <img src="./img/acer.png" alt="acer" />
+                </a>
+
+                <a
+                  data-brands-hidden="true"
+                  href=""
+                  class="link brands-container__item hidden-tablet-desktop swiper-slide"
+                >
+                  <img src="./img/sony.svg" alt="sony" />
+                </a>
+                <a
+                  data-brands-hidden="true"
+                  href=""
+                  class="link brands-container__item hidden-tablet-desktop swiper-slide"
+                >
+                  <img src="./img/acer.png" alt="acer" />
+                </a>
+
+                <a
+                  data-brands-hidden="true"
+                  href=""
+                  class="link brands-container__item hidden-tablet-desktop swiper-slide"
+                >
+                  <img src="./img/sony.svg" alt="sony" />
+                </a>
+              </div>
+              <div class="swiper-pagination"></div>
+
+              <button class="btn btn__showAll btn__showAll--decor el--hover">
+                Показать всё
+              </button>
+            </div>
+          </section>
+
+          <section class="section section__repair-device">
+            <div class="section__title">Ремонт различных видов техники</div>
+
+            <div class="swiper mg-left-right">
+              <div class="swiper-wrapper device-container">
+                <a href="" class="link device-container__item swiper-slide">
+                  Ремонт ноутбуков
+                </a>
+
+                <a href="" class="link device-container__item swiper-slide">
+                  Ремонт планшетов
+                </a>
+
+                <a href="" class="link device-container__item swiper-slide">
+                  Ремонт ПК
+                </a>
+
+                <a
+                  href=""
+                  class="link device-container__item swiper-slide hidden-tablet"
+                >
+                  Ремонт Мониторов
+                </a>
+
+                <a href="" class="link device-container__item swiper-slide hidden-tablet-desktop">
+                  Ремонт ноутбуков
+                </a>
+
+                <a href="" class="link device-container__item swiper-slide hidden-tablet-desktop">
+                  Ремонт планшетов
+                </a>
+
+                <a href="" class="link device-container__item swiper-slide hidden-tablet-desktop">
+                  Ремонт ПК
+                </a>
+
+                <a
+                  href=""
+                  class="link device-container__item swiper-slide hidden-tablet-desktop"
+                >
+                  Ремонт Мониторов
+                </a>
+              </div>
+              <div class="swiper-pagination"></div>
+
+              <button class="btn btn__showAll btn__showAll--decor el--hover">
+                Показать всё
+              </button>
+            </div>
           </section>
         </main>
       </div>

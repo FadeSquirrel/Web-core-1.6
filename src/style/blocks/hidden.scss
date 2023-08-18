@@ -19,9 +19,19 @@
     }
   }
 
+  @include tablet-desktop {
+    &-tablet-desktop {
+      display: none;
+    }
+  }
+
   @include desktop {
     &-desktop {
       display: none;
     }
+  }
+
+  &--visible {
+    display: block;
   }
 }

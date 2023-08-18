@@ -1,9 +1,22 @@
 import { dropMenu } from "./drop-menu";
-import { toggleBlurMask } from "./blur-mask";
+import { BLUR_MASK, setBlurMaskZIndexClass } from "./blur-mask";
 
 const btnClose = document.querySelector(".btn__close-drop-menu");
 
-btnClose.addEventListener("click", () => {
-  dropMenu.classList.toggle("drop-menu--hidden");
-  toggleBlurMask();
-});
+export function closeDropMenu() {
+  if (!dropMenu.classList.contains("hidden-mobile-tablet")) {
+    setTimeout(() => {
+      dropMenu.classList.toggle("hidden-mobile-tablet");
+      dropMenu.classList.toggle("z-index--mobile-tablet-upper-layer");
+    }, 700);
+
+    if (dropMenu.classList.contains("anim--mobile-tablet--dropping-top")) {
+      dropMenu.classList.remove("anim--mobile-tablet--dropping-top");
+    }
+    dropMenu.classList.toggle("anim--mobile-tablet--dropping-down");
+
+    setBlurMaskZIndexClass(BLUR_MASK.Z_TABLET_MASK_LAYER, false);
+  }
+}
+
+btnClose.addEventListener("click", closeDropMenu);

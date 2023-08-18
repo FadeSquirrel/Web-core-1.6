@@ -1,4 +1,8 @@
 .link {
-    text-decoration: none;
-    color: $color-text;
+  text-decoration: none;
+  color: $color-text;
+
+  &--text-impotant {
+    color: $color-text-impotant;
+  }
 }

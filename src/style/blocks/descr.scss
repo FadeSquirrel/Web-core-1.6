@@ -1,4 +1,5 @@
 .descr {
+  display: flex;
   margin-top: 32px;
 
   &__text {
@@ -10,9 +11,18 @@
   }
 
   @include mobile {
+    flex-direction: column;
+    align-items: center;
+
     &--tablet,
     &--desktop {
       display: none;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      max-width: 360px;
     }
   }
 
@@ -21,12 +31,28 @@
     &--desktop {
       display: none;
     }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      max-width: 360px;
+      margin-left: 48px;
+      border-radius: 5px;
+    }
   }
 
   @include desktop {
     &--mobile,
     &--tablet {
       display: none;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      max-width: 532px;
+      margin-left: 36px;
+      border-radius: 10px;
     }
   }
 }

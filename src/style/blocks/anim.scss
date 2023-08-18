@@ -1,0 +1,45 @@
+.anim {
+  @mixin animations {
+    &--dropping-top {
+      animation-name: dropping-top;
+      animation-duration: 0.75s;
+    }
+
+    @keyframes dropping-top {
+      from {
+        opacity: 0;
+        transform: translateY(-320px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    &--dropping-down {
+      animation-name: dropping-down;
+      animation-duration: 0.75s;
+    }
+
+    @keyframes dropping-down {
+      from {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      to {
+        opacity: 0;
+        transform: translateY(-500px);
+      }
+    }
+  }
+
+  @include animations;
+
+  @include mobile-tablet {
+    &--mobile-tablet {
+      @include animations;
+    }
+  }
+}

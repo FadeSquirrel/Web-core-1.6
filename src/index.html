@@ -7,17 +7,84 @@
   </head>
   <body class="page page--background">
     <!-- a block that applies a mask to the content of the page when the modal window is called -->
-    <div class="page__mask-container"></div>
+    <div class="blur-mask"></div>
+
+    <!-- modal popup window, called by clicking on the btn__request-order button -->
+    <aside
+      class="feedback-menu feedback-menu__request-order feedback-menu--shadow hidden"
+    >
+      <button class="btn btn__close-feedback-menu el--hover">
+        <img src="/src/svg/close.svg" alt="Закрыть" />
+      </button>
+      <h1 class="feedback-menu--title-text">Обратная связь</h1>
+
+      <form action="" class="feedback-menu__form">
+        <input type="userName" placeholder="Имя" class="feedback-menu__item" />
+        <input
+          type="number"
+          placeholder="Телефон"
+          class="feedback-menu__item"
+        />
+        <input
+          type="email"
+          placeholder="Электронная почта"
+          class="feedback-menu__item"
+        />
+        <input
+          type="userMessage"
+          placeholder="Сообщение"
+          class="feedback-menu__item feedback-menu__item--height"
+        />
+      </form>
+      <p class="feedback-menu__descr">
+        Нажимая “отправить”, вы даете согласие на
+        <a href="" class="link link--text-impotant el--hover"
+          >обработку персональных данных</a
+        >
+        и соглашаетесь с нашей
+        <a href="" class="link link--text-impotant el--hover"
+          >политикой конфиденциальности</a
+        >
+      </p>
+      <button type="submit" class="btn btn__feedback-submit el--hover">Отправить</button>
+    </aside>
+
+    <!-- modal popup window, called by clicking on the btn__call-order button -->
+    <aside
+      class="feedback-menu feedback-menu__call-order feedback-menu--shadow hidden"
+    >
+      <button class="btn btn__close-feedback-menu el--hover">
+        <img src="/src/svg/close.svg" alt="Закрыть" />
+      </button>
+      <h1 class="feedback-menu--title-text">Заказать звонок</h1>
+
+      <form action="" class="feedback-menu__form">
+        <input
+          type="number"
+          placeholder="Телефон"
+          class="feedback-menu__item"
+        />
+      </form>
+      <p class="feedback-menu__descr">
+        Нажимая “отправить”, вы даете согласие на
+        <a href="" class="link link--text-impotant el--hover"
+          >обработку персональных данных</a
+        >
+        и соглашаетесь с нашей
+        <a href="" class="link link--text-impotant el--hover"
+          >политикой конфиденциальности</a
+        >
+      </p>
+      <button type="submit" class="btn btn__feedback-submit el--hover">Отправить</button>
+    </aside>
 
     <!-- content that will be centered on a large monitor width -->
     <div class="page-content">
       <!-- called menu, permanently displayed in the desktop version -->
-      <aside class="drop-menu drop-menu--hidden drop-menu--shadow">
+      <aside class="drop-menu hidden-mobile-tablet drop-menu--shadow">
         <div class="drop-menu__header">
-          <button
-            class="btn btn__close-drop-menu drop-menu__header--desktop-hidden el--hover"
-          >
-            <img src="/src/svg/cancel.svg" alt="Закрыть" />
+          <button class="btn btn__close-drop-menu hidden-desktop el--hover">
+            <img src="/src/svg/close.svg" alt="Закрыть" />
           </button>
           <a href="#" class="drop-menu__logo el--hover">
             <img src="/src/svg/Group.svg" alt="Лого" />
@@ -141,7 +208,7 @@
             </div>
           </div>
 
-          <nav class="nav">
+          <nav class="nav nav--left-gradient">
             <div class="nav__item nav__item--active el--hover">
               Ремонтируемые бренды
             </div>
@@ -165,7 +232,7 @@
                 официальной гарантией производителя.
                 <p class="p--mg">
                   Мы успешно работаем с 1992 года и заслужили репутацию
-                  надежного партнера. официальной гарантией производителя.
+                  надежного партнера.
                 </p>
               </div>
               <div class="descr--desktop">
@@ -180,14 +247,14 @@
                   близким. официальной гарантией производителя.
                 </p>
               </div>
-              <button class="show-more"></button>
+              <button class="btn btn__show-more el--hover">Читать далее</button>
             </div>
-            <!-- <img
+            <img
               src="../src/img/photo-logo-mobile-tablet.jpg"
               srcset="../src/img/photo-logo-desktop.jpg 530w"
               alt="Логотип компании в офисе"
               class="descr__img"
-            /> -->
+            />
           </section>
         </main>
       </div>

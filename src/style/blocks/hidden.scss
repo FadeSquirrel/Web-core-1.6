@@ -1,0 +1,27 @@
+.hidden {
+  display: none;
+
+  @include mobile {
+    &-mobile {
+      display: none;
+    }
+  }
+
+  @include mobile-tablet {
+    &-mobile-tablet {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    &-tablet {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    &-desktop {
+      display: none;
+    }
+  }
+}

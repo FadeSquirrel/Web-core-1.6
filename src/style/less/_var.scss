@@ -14,7 +14,7 @@ $main-font: "TT Lakes";
 
 $color-main-bg: #f8f8f8;
 $color-el-bg: #fff;
-$color-page-bg: #3d3d3d;
+$color-page-bg: #e6e6e6;
 $color-blur-bg: #fff;
 
 $color-text: #1b1c21;
@@ -22,10 +22,17 @@ $color-text-title: #7e7e82;
 $color-text-active: #7e7e82;
 $color-text-focus: #302e2e;
 $color-text-hover: #302e2e;
+$color-text-impotant: #ff3e79;
 
 $color-border-highlight: #d9fff5;
 $color-divader: #eaeaea;
 
 $color-main-btn-color: #ff3e79;
 
-$sidebar-z-index: 10;
+$z-index-underlay: -1;
+$z-index-main-layer: auto;
+$z-index-undermask-layer: 8;
+$z-index-mask-layer: 9;
+$z-index-upper-layer: 10;
+$z-index-mask-overlay: 100;
+$z-index-overlay: 1000;

@@ -1,1 +1,0 @@
-export const pageMaskContainer = document.querySelector('.page__mask-container');

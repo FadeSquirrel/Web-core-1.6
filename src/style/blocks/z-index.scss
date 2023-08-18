@@ -1,0 +1,59 @@
+.z-index {
+  @mixin z-index-layers {
+    &-underlay {
+      z-index: $z-index-main-layer;
+    }
+
+    &-main-layer {
+      z-index: $z-index-main-layer;
+    }
+
+    &-undermask-layer {
+      z-index: $z-index-undermask-layer;
+    }
+
+    &-mask-layer {
+      z-index: $z-index-mask-layer;
+    }
+
+    &-upper-layer {
+      z-index: $z-index-upper-layer;
+    }
+
+    &-mask-overlay {
+      z-index: $z-index-mask-overlay;
+    }
+
+    &-overlayer {
+      z-index: $z-index-overlay;
+    }
+  }
+
+  @include mobile {
+    &--mobile {
+      @include z-index-layers;
+    }
+  }
+
+  @include mobile-tablet {
+    &--mobile-tablet {
+      @include z-index-layers;
+    }
+  }
+
+  @include tablet {
+    &--tablet {
+      @include z-index-layers;
+    }
+  }
+
+  @include desktop {
+    &--desktop {
+      @include z-index-layers;
+    }
+  }
+
+  &- {
+    @include z-index-layers;
+  }
+}

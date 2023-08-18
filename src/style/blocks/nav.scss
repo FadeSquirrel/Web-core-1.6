@@ -5,6 +5,23 @@
   @include mobile-tablet {
     overflow: auto;
     margin-top: 24px;
+
+    &--left-gradient {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 36px;
+        right: 0px;
+        background: linear-gradient(
+          270deg,
+          #f8f8f8 0.04%,
+          rgba(248, 248, 248, 0) 100%
+        );
+      }
+    }
   }
 
   @include desktop {

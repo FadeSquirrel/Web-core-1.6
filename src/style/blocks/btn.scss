@@ -28,4 +28,54 @@
       justify-content: space-between;
     }
   }
+
+  &__show-more {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+
+    margin-top: 16px;
+    padding-left: 32px;
+    background: center left url("/src/svg/expand.svg") no-repeat;
+  }
+
+  @include mobile {
+    &__show-more {
+      margin-bottom: 16px;
+    }
+
+    &__close-feedback-menu {
+      margin-right: auto;
+    }
+  }
+
+  @include tablet-desktop {
+    &__close-feedback-menu {
+      position: absolute;
+      right: 440px + 16px;
+      top: 40px + 16px;
+    }
+  }
+
+  &__feedback-submit {
+    color: white;
+    margin-top: 23px;
+    margin-left: auto;
+    z-index: $z-index-upper-layer;
+    padding: 4px 28px 4px 8px;
+    width: 136px;
+    height: 32px;
+    border-radius: 16px;
+    background: $color-main-btn-color;
+    position: relative;
+
+    &::after {
+      content: url(/src/svg/goside.svg);
+      position: absolute;
+      right: 4px;
+      top: 4px;
+    }
+  }
 }

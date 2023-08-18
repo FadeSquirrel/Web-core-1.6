@@ -1,0 +1,24 @@
+.blur-mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9605;
+  background-color: $color-blur-bg;
+  z-index: $z-index-underlay;
+
+  @include tablet {
+    &--tablet-mask-layer {
+      display: block;
+      z-index: $z-index-mask-layer;
+    }
+  }
+
+  @include tablet-desktop {
+    &--overlay {
+      display: block;
+      z-index: $z-index-mask-overlay;
+    }
+  }
+}

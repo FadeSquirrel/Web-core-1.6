@@ -14,4 +14,17 @@
     letter-spacing: -0.2px;
     text-transform: uppercase;
   }
+
+  &__descr {
+    margin-top: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+
+    @include tablet-desktop {
+      max-width: 421px;
+    }
+  }
 }

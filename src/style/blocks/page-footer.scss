@@ -1,0 +1,45 @@
+.page-footer {
+  margin-top: 40px;
+  padding: 16px 24px 16px 24px;
+  border-top: 1px solid $color-border-highlight;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px 16px;
+  }
+
+  &__text {
+    color: #7e7e82;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+
+    &--aling-start {
+      text-align: start;
+    }
+
+    &--aling-center {
+      text-align: center;
+    }
+
+    &--aling-end {
+      text-align: end;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+
+    @include tablet-desktop {
+      min-width: 33%;
+      max-width: 33%;
+    }
+  }
+}

@@ -5,4 +5,25 @@
   &--text-impotant {
     color: $color-text-impotant;
   }
+
+  &__get-offer {
+    margin-top: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    position: relative;
+
+    &::after {
+      content: url("/src/svg/more.svg");
+      position: relative;
+      right: 0;
+      top: 7px;
+    }
+
+    @include tablet-desktop {
+      max-width: 292px;
+    }
+  }
 }

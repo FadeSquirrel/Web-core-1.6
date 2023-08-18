@@ -11,19 +11,19 @@ const options = {
       enabled: true,
     },
     320: {
-      slidesPerView: 1.3,
+      slidesPerView: 1.1,
       enabled: true,
     },
     360: {
-      slidesPerView: 1.47,
+      slidesPerView: 1.2,
       enabled: true,
     },
     390: {
-      slidesPerView: 1.6,
+      slidesPerView: 1.3,
       enabled: true,
     },
     420: {
-      slidesPerView: 2,
+      slidesPerView: 1.5,
       enabled: true,
     },
     768: {

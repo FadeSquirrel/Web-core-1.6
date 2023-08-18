@@ -1,11 +1,9 @@
-const btnShowAll = document.querySelector(
-  ".brands-container__btn-show-devices"
-);
+const btnShowAll = document.querySelector(".brands-container__btn-show-brands");
 
 btnShowAll.addEventListener("click", () => {
-  let hiddenBtns = document.querySelectorAll('[data-device-hidden="true"]');
+  let hiddenEls = document.querySelectorAll('[data-brands-hidden="true"]');
 
-  hiddenBtns.forEach((element) => {
+  hiddenEls.forEach((element) => {
     element.classList.toggle("hidden--visible");
   });
 

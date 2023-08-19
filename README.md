@@ -1,6 +1,6 @@
 ﻿# Web-core-1.6
 
---> Node.js v18.17.1
+--> Node.js v18.17.1 https://nodejs.org/en/blog/release/v18.17.1
 
 # Install
 

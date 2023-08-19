@@ -1,0 +1,12 @@
+.price-container {
+  margin-top: 31px;
+
+  @include mobile {
+    height: 200px + 16px + 12px;
+  }
+
+  @include tablet-desktop {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,3 +1,3 @@
-import './index.html';
-import './style/index.scss';
-import './js/index';
+import "./index.html";
+import "./style/index.scss";
+import "./js/index";

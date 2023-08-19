@@ -124,4 +124,29 @@
       }
     }
   }
+
+  &__service-order {
+    border-radius: 16px;
+    background: $color-main-btn-color;
+    padding: 4px 12px 4px 12px;
+    width: 119px;
+
+    color: #fff;
+    text-align: left;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+
+    position: relative;
+
+    &::after {
+      content: url(/src/svg/goside.svg);
+      position: absolute;
+      right: 4px;
+      top: 4px;
+    }
+  }
 }

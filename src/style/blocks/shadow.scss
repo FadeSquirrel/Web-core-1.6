@@ -1,0 +1,22 @@
+.shadow {
+  &--mobile--right {
+    @include mobile {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -6px;
+        width: 30px;
+        height: 100%;
+        z-index: $z-index-undermask-layer;
+        background: linear-gradient(
+          270deg,
+          #f8f8f8 0.04%,
+          rgba(248, 248, 248, 0) 100%
+        );
+      }
+    }
+  }
+}

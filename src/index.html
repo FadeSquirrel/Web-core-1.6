@@ -13,7 +13,7 @@
     <aside
       class="feedback-menu feedback-menu__request-order feedback-menu--shadow hidden"
     >
-      <button class="btn btn__close-feedback-menu el--hover">
+      <button class="btn btn__close-feedback-menu el el--hover--scale">
         <img src="/src/svg/close.svg" alt="Закрыть" />
       </button>
       <h1 class="feedback-menu--title-text">Обратная связь</h1>
@@ -38,15 +38,18 @@
       </form>
       <p class="feedback-menu__descr">
         Нажимая “отправить”, вы даете согласие на
-        <a href="" class="link link--text-impotant el--hover"
+        <a href="" class="link link--text-impotant el el--hover--opacity"
           >обработку персональных данных</a
         >
         и соглашаетесь с нашей
-        <a href="" class="link link--text-impotant el--hover"
+        <a href="" class="link link--text-impotant el el--hover--opacity"
           >политикой конфиденциальности</a
         >
       </p>
-      <button type="submit" class="btn btn__feedback-submit el--hover">
+      <button
+        type="submit"
+        class="btn btn__feedback-submit el el--hover--scale--shadow"
+      >
         Отправить
       </button>
     </aside>
@@ -55,7 +58,7 @@
     <aside
       class="feedback-menu feedback-menu__call-order feedback-menu--shadow hidden"
     >
-      <button class="btn btn__close-feedback-menu el--hover">
+      <button class="btn btn__close-feedback-menu el el--hover--scale">
         <img src="/src/svg/close.svg" alt="Закрыть" />
       </button>
       <h1 class="feedback-menu--title-text">Заказать звонок</h1>
@@ -69,15 +72,18 @@
       </form>
       <p class="feedback-menu__descr">
         Нажимая “отправить”, вы даете согласие на
-        <a href="" class="link link--text-impotant el--hover"
+        <a href="" class="link link--text-impotant el el--hover--opacity"
           >обработку персональных данных</a
         >
         и соглашаетесь с нашей
-        <a href="" class="link link--text-impotant el--hover"
+        <a href="" class="link link--text-impotant el el--hover--opacity"
           >политикой конфиденциальности</a
         >
       </p>
-      <button type="submit" class="btn btn__feedback-submit el--hover">
+      <button
+        type="submit"
+        class="btn btn__feedback-submit el el--hover--scale--shadow"
+      >
         Отправить
       </button>
     </aside>
@@ -87,14 +93,16 @@
       <!-- called menu, permanently displayed in the desktop version -->
       <aside class="drop-menu hidden-mobile-tablet drop-menu--shadow">
         <div class="drop-menu__header">
-          <button class="btn btn__close-drop-menu hidden-desktop el--hover">
+          <button
+            class="btn btn__close-drop-menu hidden-desktop el el--hover--scale"
+          >
             <img src="/src/svg/close.svg" alt="Закрыть" />
           </button>
-          <a href="#" class="drop-menu__logo el--hover">
+          <a href="#" class="drop-menu__logo el el--hover--opacity">
             <img src="/src/svg/Group.svg" alt="Лого" />
           </a>
           <button
-            class="btn btn__search drop-menu__header--mg-left-auto el--hover"
+            class="btn btn__search drop-menu__header--mg-left-auto el el--hover--scale"
           >
             <img src="/src/svg/search.svg" alt="Поиск" />
           </button>
@@ -102,55 +110,65 @@
 
         <nav class="drop-menu__nav">
           <a
-            class="link drop-menu__nav--text drop-menu__nav--active el--hover"
+            class="link drop-menu__nav--text drop-menu__nav--active el el--hover--opacity"
             href=""
             >Ремонт техники</a
           >
-          <a class="link drop-menu__nav--text el--hover" href=""
+          <a class="link drop-menu__nav--text el el--hover--opacity" href=""
             >Услуги и сервисы</a
           >
-          <a class="link drop-menu__nav--text el--hover" href=""
+          <a class="link drop-menu__nav--text el el--hover--opacity" href=""
             >Корпоративным клиентам</a
           >
-          <a class="link drop-menu__nav--text el--hover" href=""
+          <a class="link drop-menu__nav--text el el--hover--opacity" href=""
             >Продавцам техники</a
           >
-          <a class="link drop-menu__nav--text el--hover" href="">Партнерам</a>
-          <a class="link drop-menu__nav--text el--hover" href=""
+          <a class="link drop-menu__nav--text el el--hover--opacity" href=""
+            >Партнерам</a
+          >
+          <a class="link drop-menu__nav--text el el--hover--opacity" href=""
             >Производителям</a
           >
-          <a class="link drop-menu__nav--text el--hover" href=""
+          <a class="link drop-menu__nav--text el el--hover--opacity" href=""
             >Наши сервисные центры</a
           >
-          <a class="link drop-menu__nav--text el--hover" href="">Контакты</a>
+          <a class="link drop-menu__nav--text el el--hover--opacity" href=""
+            >Контакты</a
+          >
         </nav>
 
         <div class="drop-menu__btns drop-menu__btns--mg-top-auto">
-          <button class="btn btn__call-order el--hover">
+          <button class="btn btn__call-order el el--hover--scale">
             <img src="/src/svg/call.svg" alt="Заказать звонок" />
           </button>
-          <button class="btn btn__request-order el--hover">
+          <button class="btn btn__request-order el el--hover--scale">
             <img src="/src/svg/chat.svg" alt="Оставить заявку" />
           </button>
-          <button class="btn btn__profile el--hover">
+          <button class="btn btn__profile el el--hover--scale">
             <img src="/src/svg/profile.svg" alt="Профиль" />
           </button>
         </div>
 
-        <div class="drop-menu__email el--hover">mail@cps.com</div>
+        <div class="drop-menu__email el el--hover--opacity">mail@cps.com</div>
 
-        <div class="drop-menu__contact-num el--hover">8 800 890 8900</div>
+        <div class="drop-menu__contact-num el el--hover--opacity">
+          8 800 890 8900
+        </div>
 
         <div class="drop-menu__lang lang-nav">
           <button
-            class="btn lang-nav__btn lang-nav__btn-ru lang-nav__btn--active el--hover"
+            class="btn lang-nav__btn lang-nav__btn-ru lang-nav__btn--active el el--hover--opacity"
           >
             RU
           </button>
-          <button class="btn lang-nav__btn lang-nav__btn-en el--hover">
+          <button
+            class="btn lang-nav__btn lang-nav__btn-en el el--hover--opacity"
+          >
             EN
           </button>
-          <button class="btn lang-nav__btn lang-nav__btn-ch el--hover">
+          <button
+            class="btn lang-nav__btn lang-nav__btn-ch el el--hover--opacity"
+          >
             CH
           </button>
         </div>
@@ -160,30 +178,36 @@
       <div class="page-content--width">
         <header class="page-header">
           <div class="page-header__title-left-side">
-            <button class="btn btn__drop-menu el--hover">
+            <button class="btn btn__drop-menu el el--hover--scale">
               <img src="/src/svg/burger.svg" alt="Меню" />
             </button>
-            <a href="#" class="page-header__logo el--hover">
+            <a href="#" class="page-header__logo el el--hover--scale">
               <img src="/src/svg/Group.svg" alt="Лого" />
             </a>
           </div>
 
           <div class="page-header__title-right-side">
-            <button class="btn btn__call-order btn--hidden-mobile el--hover">
+            <button
+              class="btn btn__call-order btn--hidden-mobile el el--hover--scale"
+            >
               <img src="/src/svg/call.svg" alt="Заказать звонок" />
             </button>
-            <button class="btn btn__request-order btn--hidden-mobile el--hover">
+            <button
+              class="btn btn__request-order btn--hidden-mobile el el--hover--scale"
+            >
               <img src="/src/svg/chat.svg" alt="Оставить заявку" />
             </button>
-            <button class="btn btn__profile btn--hidden-mobile el--hover">
+            <button
+              class="btn btn__profile btn--hidden-mobile el el--hover--scale"
+            >
               <img src="/src/svg/profile.svg" alt="Профиль" />
             </button>
             <button
-              class="btn btn__repair-request btn__divader-tablet el--hover"
+              class="btn btn__repair-request btn__divader-tablet el el--hover--scale"
             >
               <img src="/src/svg/repair.svg" alt="Ремонт" />
             </button>
-            <button class="btn btn__checkstatus el--hover">
+            <button class="btn btn__checkstatus el el--hover--scale">
               <img
                 src="/src/svg/checkstatus.svg"
                 alt="Проверить статус ремонта"
@@ -197,13 +221,13 @@
             <h1 class="title title--decor">Услуги и сервисы</h1>
             <div class="title-container__btn-container">
               <p class="title-container--text">Оставить заявку</p>
-              <button class="btn btn__repair-request el--hover">
+              <button class="btn btn__repair-request el el--hover--scale">
                 <img src="/src/svg/repair.svg" alt="Отправить заявку" />
               </button>
               <p class="title-container--text title-container--mg-left">
                 Статус ремонта
               </p>
-              <button class="btn btn__checkstatus el--hover">
+              <button class="btn btn__checkstatus el el--hover--scale">
                 <img
                   src="/src/svg/checkstatus.svg"
                   alt="Проверить статус ремонта"
@@ -213,18 +237,22 @@
           </div>
 
           <nav class="nav nav--left-gradient mg-left-right">
-            <div class="nav__item nav__item--active el--hover">
+            <div class="nav__item nav__item--active el el--hover">
               Ремонтируемые бренды
             </div>
-            <div class="nav__item el--hover">Дополнительные услуги</div>
-            <div class="nav__item el--hover">Цены на услуги</div>
-            <div class="nav__item el--hover">Адреса сервисных центров</div>
-            <div class="nav__item el--hover">Специальные цены</div>
-            <div class="nav__item el--hover">Отзывы</div>
+            <div class="nav__item el el--hover--opacity">
+              Дополнительные услуги
+            </div>
+            <div class="nav__item el el--hover--opacity">Цены на услуги</div>
+            <div class="nav__item el el--hover--opacity">
+              Адреса сервисных центров
+            </div>
+            <div class="nav__item el el--hover--opacity">Специальные цены</div>
+            <div class="nav__item el el--hover--opacity">Отзывы</div>
           </nav>
 
           <section class="descr mg-left-right">
-            <div class="descr__text">
+            <div class="descr__text descr--open-anim">
               <div>
                 Мы являемся авторизованным сервисным центром по ремонту техники
                 Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
@@ -257,7 +285,7 @@
               </div>
 
               <button
-                class="btn btn__show-more btn__show-more--decor el--hover"
+                class="btn btn__show-more btn__show-more--decor el el--hover--opacity"
               >
                 Читать далее
               </button>
@@ -273,36 +301,57 @@
           <section class="section section__brands">
             <div class="section__title">Ремонт техники различных брендов</div>
 
-            <div class="swiper mg-left-right shadow--mobile--right">
+            <div
+              id="swiper-brands"
+              class="swiper mg-left-right shadow--mobile--right"
+            >
               <div class="swiper-wrapper brands-container">
-                <a href="" class="link brands-container__item swiper-slide">
+                <a
+                  href=""
+                  class="link brands-container__item swiper-slide el el--hover--shadow"
+                >
                   <img src="./img/lenovo.png" alt="lenovo" />
                 </a>
 
-                <a href="" class="link brands-container__item swiper-slide">
+                <a
+                  href=""
+                  class="link brands-container__item swiper-slide el el--hover--shadow"
+                >
                   <img src="./img/samsung.png" alt="samsung" />
                 </a>
 
-                <a href="" class="link brands-container__item swiper-slide">
+                <a
+                  href=""
+                  class="link brands-container__item swiper-slide el el--hover--shadow"
+                >
                   <img src="./img/apple.png" alt="apple" />
                 </a>
 
-                <a href="" class="link brands-container__item swiper-slide">
+                <a
+                  href=""
+                  class="link brands-container__item swiper-slide el el--hover--shadow"
+                >
                   <img src="./img/viewsonic.png" alt="viewsonic" />
                 </a>
 
-                <a href="" class="link brands-container__item swiper-slide">
+                <a
+                  href=""
+                  class="link brands-container__item swiper-slide el el--hover--shadow"
+                >
                   <img src="./img/bosch.png" alt="bosch" />
                 </a>
 
-                <a href="" class="link brands-container__item swiper-slide">
+                <a
+                  href=""
+                  class="link brands-container__item swiper-slide el el--hover--shadow"
+                >
                   <img src="./img/hp.png" alt="hp" />
                 </a>
 
                 <a
                   data-brands-hidden="true"
                   href=""
-                  class="link brands-container__item hidden-tablet swiper-slide"
+                  class="link brands-container__item hidden-tablet swiper-slide el el--hover--shadow"
                 >
                   <img src="./img/acer.png" alt="acer" />
                 </a>
@@ -310,14 +359,14 @@
                 <a
                   data-brands-hidden="true"
                   href=""
-                  class="link brands-container__item hidden-tablet swiper-slide"
+                  class="link brands-container__item hidden-tablet swiper-slide el el--hover--shadow"
                 >
                   <img src="./img/sony.svg" alt="sony" />
                 </a>
                 <a
                   data-brands-hidden="true"
                   href=""
-                  class="link brands-container__item hidden-tablet-desktop swiper-slide"
+                  class="link brands-container__item hidden-tablet-desktop swiper-slide el el--hover--shadow"
                 >
                   <img src="./img/acer.png" alt="acer" />
                 </a>
@@ -325,14 +374,14 @@
                 <a
                   data-brands-hidden="true"
                   href=""
-                  class="link brands-container__item hidden-tablet-desktop swiper-slide"
+                  class="link brands-container__item hidden-tablet-desktop swiper-slide el el--hover--shadow"
                 >
                   <img src="./img/sony.svg" alt="sony" />
                 </a>
                 <a
                   data-brands-hidden="true"
                   href=""
-                  class="link brands-container__item hidden-tablet-desktop swiper-slide"
+                  class="link brands-container__item hidden-tablet-desktop swiper-slide el el--hover--shadow"
                 >
                   <img src="./img/acer.png" alt="acer" />
                 </a>
@@ -340,14 +389,14 @@
                 <a
                   data-brands-hidden="true"
                   href=""
-                  class="link brands-container__item hidden-tablet-desktop swiper-slide"
+                  class="link brands-container__item hidden-tablet-desktop swiper-slide el el--hover--shadow"
                 >
                   <img src="./img/sony.svg" alt="sony" />
                 </a>
                 <a
                   data-brands-hidden="true"
                   href=""
-                  class="link brands-container__item hidden-tablet-desktop swiper-slide"
+                  class="link brands-container__item hidden-tablet-desktop swiper-slide el el--hover--shadow"
                 >
                   <img src="./img/acer.png" alt="acer" />
                 </a>
@@ -355,15 +404,18 @@
                 <a
                   data-brands-hidden="true"
                   href=""
-                  class="link brands-container__item hidden-tablet-desktop swiper-slide"
+                  class="link brands-container__item hidden-tablet-desktop swiper-slide el el--hover--shadow"
                 >
                   <img src="./img/sony.svg" alt="sony" />
                 </a>
               </div>
-              <div class="swiper-pagination"></div>
+              <div
+                id="swiper-brands-pagination"
+                class="swiper-pagination"
+              ></div>
 
               <button
-                class="brands-container__btn-show-brands btn btn__showAll btn__showAll--decor el--hover"
+                class="brands-container__btn-show-brands btn btn__showAll btn__showAll--decor el el--hover--opacity"
               >
                 Показать всё
               </button>
@@ -373,26 +425,35 @@
           <section class="section section__repair-device">
             <div class="section__title">Ремонт различных видов техники</div>
 
-            <div class="swiper mg-left-right">
+            <div id="swiper-repair-devices" class="swiper mg-left-right">
               <div
                 class="swiper-wrapper device-container shadow--mobile--right"
               >
-                <a href="" class="link device-container__item swiper-slide">
+                <a
+                  href=""
+                  class="link device-container__item swiper-slide el el--hover--shadow"
+                >
                   Ремонт ноутбуков
                 </a>
 
-                <a href="" class="link device-container__item swiper-slide">
+                <a
+                  href=""
+                  class="link device-container__item swiper-slide el el--hover--shadow"
+                >
                   Ремонт планшетов
                 </a>
 
-                <a href="" class="link device-container__item swiper-slide">
+                <a
+                  href=""
+                  class="link device-container__item swiper-slide el el--hover--shadow"
+                >
                   Ремонт ПК
                 </a>
 
                 <a
                   data-device-hidden="true"
                   href=""
-                  class="link device-container__item swiper-slide hidden-tablet"
+                  class="link device-container__item swiper-slide hidden-tablet el el--hover--shadow"
                 >
                   Ремонт Мониторов
                 </a>
@@ -400,7 +461,7 @@
                 <a
                   data-device-hidden="true"
                   href=""
-                  class="link device-container__item swiper-slide hidden-tablet-desktop"
+                  class="link device-container__item swiper-slide hidden-tablet-desktop el el--hover--shadow"
                 >
                   Ремонт ноутбуков
                 </a>
@@ -408,7 +469,7 @@
                 <a
                   data-device-hidden="true"
                   href=""
-                  class="link device-container__item swiper-slide hidden-tablet-desktop"
+                  class="link device-container__item swiper-slide hidden-tablet-desktop el el--hover--shadow"
                 >
                   Ремонт планшетов
                 </a>
@@ -416,7 +477,7 @@
                 <a
                   data-device-hidden="true"
                   href=""
-                  class="link device-container__item swiper-slide hidden-tablet-desktop"
+                  class="link device-container__item swiper-slide hidden-tablet-desktop el el--hover--shadow"
                 >
                   Ремонт ПК
                 </a>
@@ -424,15 +485,18 @@
                 <a
                   data-device-hidden="true"
                   href=""
-                  class="link device-container__item swiper-slide hidden-tablet-desktop"
+                  class="link device-container__item swiper-slide hidden-tablet-desktop el el--hover--shadow"
                 >
                   Ремонт Мониторов
                 </a>
               </div>
-              <div class="swiper-pagination"></div>
+              <div
+                id="swiper-device-pagination"
+                class="swiper-pagination"
+              ></div>
 
               <button
-                class="brands-container__btn-show-devices btn btn__showAll btn__showAll--decor el--hover"
+                class="brands-container__btn-show-devices btn btn__showAll btn__showAll--decor el el--hover--opacity"
               >
                 Показать всё
               </button>
@@ -442,7 +506,7 @@
           <section class="section section__price">
             <div class="section__title">Цены на услуги</div>
 
-            <div class="swiper mg-left-right">
+            <div id="swiper-price" class="swiper mg-left-right">
               <div class="swiper-wrapper price-container shadow--mobile--right">
                 <!-- table title, only tablet-desktop -->
                 <div
@@ -473,7 +537,7 @@
                     30 мин
                   </div>
                   <button
-                    class="btn btn__service-order services-price-container__order el--hover"
+                    class="btn btn__service-order services-price-container__order el el--hover--scale--shadow"
                   >
                     Заказать
                   </button>
@@ -490,7 +554,7 @@
                     30-120 мин
                   </div>
                   <button
-                    class="btn btn__service-order services-price-container__order el--hover"
+                    class="btn btn__service-order services-price-container__order el el--hover--scale--shadow"
                   >
                     Заказать
                   </button>
@@ -507,7 +571,7 @@
                     30-120 мин
                   </div>
                   <button
-                    class="btn btn__service-order services-price-container__order el--hover"
+                    class="btn btn__service-order services-price-container__order el el--hover--scale--shadow"
                   >
                     Заказать
                   </button>
@@ -523,7 +587,7 @@
                     30-120 мин
                   </div>
                   <button
-                    class="btn btn__service-order services-price-container__order el--hover"
+                    class="btn btn__service-order services-price-container__order el el--hover--scale--shadow"
                   >
                     Заказать
                   </button>
@@ -539,13 +603,13 @@
                     30-120 мин
                   </div>
                   <button
-                    class="btn btn__service-order services-price-container__order el--hover"
+                    class="btn btn__service-order services-price-container__order el el--hover--scale--shadow"
                   >
                     Заказать
                   </button>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
+              <div id="swiper-price-pagination" class="swiper-pagination"></div>
             </div>
             <div class="section__descr mg-left-right">
               Все цены указаны с учетом НДС. Стоимость ремонта указана на
@@ -553,24 +617,28 @@
               постоянное обслуживание, оставьте заявку.
             </div>
 
-            <a href="" class="link link__get-offer el--hover mg-left-right"
+            <a
+              href=""
+              class="link link__get-offer el el--hover--opacity mg-left-right"
               >Получить коммерческое предложение</a
             >
           </section>
 
           <div class="page-footer">
             <a
-              class="page-footer__text page-footer__text--aling-start el--hover"
+              class="page-footer__text page-footer__text--aling-start el el--hover--opacity"
             >
               © 2019 CPS
               <p>Разработано командой Apesong</p>
             </a>
             <a
-              class="page-footer__text page-footer__text--aling-center el--hover"
+              class="page-footer__text page-footer__text--aling-center el el--hover--opacity"
             >
               Политика конфиденциальности
             </a>
-            <a class="page-footer__text page-footer__text--aling-end el--hover">
+            <a
+              class="page-footer__text page-footer__text--aling-end el el--hover--opacity"
+            >
               Информация, размещенная на данной странице, не является публичной
               офертой
             </a>

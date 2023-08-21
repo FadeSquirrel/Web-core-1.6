@@ -18,16 +18,16 @@
 
     width: 240px;
     height: 72px;
-    min-width: 240px;
+    min-width: 224px;
     max-width: 240px;
     max-height: 72px;
 
     border-radius: 6px;
     border: 1px solid #eaeaea;
-    background-color: $color-el-bg;
     background-image: url("/src/svg/go.svg");
     background-repeat: no-repeat;
     background-position: 180px center;
+    background-color: $color-el-bg;
 
     @include mobile {
       margin-right: 24px;
@@ -37,6 +37,7 @@
     @include tablet {
       width: 224px;
       background: (180px - 16px) center url("/src/svg/go.svg") no-repeat;
+      background-color: $color-el-bg;
     }
   }
 }

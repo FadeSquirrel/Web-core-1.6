@@ -15,3 +15,5 @@ npm build:dev
 npm build:prod
 
 npm clear
+
+deploy

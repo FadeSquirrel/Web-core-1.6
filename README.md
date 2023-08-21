@@ -16,4 +16,4 @@ npm build:prod
 
 npm clear
 
-deploy
+npm deploy

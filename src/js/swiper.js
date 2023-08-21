@@ -115,10 +115,3 @@ function initSwipers() {
 }
 
 let swiper = initSwipers();
-
-// window.addEventListener("click", () => {
-//   for (const key in swiper) {
-//     swiper.key.destroy();
-//   }
-//   //swiper = new Swiper(".swiper", options);
-// });
